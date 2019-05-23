@@ -1,0 +1,96 @@
+.buttonCLass {
+    margin-right: 31px;
+    border-radius: 10px;
+}
+
+.buttonCLass button {
+    border-radius: 19px;
+}
+
+button i {
+    margin-right: 9px;
+}
+
+.overview-item
+{
+            border-radius: 20px;
+    }
+
+        
+
+        .overview-item:hover {
+            transform: scale(1.1);
+            transition: all 0.8s;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        .text {
+            margin-top: 35px;
+            text-align: center;
+
+        }
+.ccc {
+    
+    position: relative;
+    left: 100%;
+}
+        .overview-box .icon i {
+             font-size: 73px !important;
+             text-align: center;
+        }
+        
+        .check{
+            margin-top: 15px;
+        }
+
+        .navbar-sidebar .navbar__list li a {
+
+                    font-size: 20px;
+
+        }
+
+        .overview__inner 
+        {
+           text-align: center;
+        }
+        .m-t-25 {
+    margin-top: 40px !important;
+}
+.overview-item {
+    height: 325px;
+    
+}
+
+    .header-mobile .navbar-mobile .navbar-mobile__list li a {
+
+            padding: 8px 15px;
+            border-bottom: 2px solid #e6e6e6;
+
+    }
+
+    .overview-box .text h2 {
+        font-size: 37px !important;
+        line-height: 1.2 !important;
+    }
+
+.logo img {
+    height: 71px;
+     
+}
+
+.logo {
+    padding-left: 2px !important;
+}
+
+.account-dropdown {
+
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.7) !important;
+}
+@media screen and (max-width: 1000px) {
+.ccc {
+    
+   
+    left: 0%;
+}
+
+}

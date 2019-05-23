@@ -1,0 +1,55 @@
+
+.jumbotron1{
+
+	height: 626px;
+	width: 100%;
+    background-color: black;
+    background: color: black;
+    background-size: cover;
+    background-position: center center;
+
+
+}
+
+#button1:hover {
+    background-color: black;
+    color: white;
+    border: 2px solid #196F3D  ;
+}
+
+#button1 {
+    margin-top: 305px;
+    padding: 25px 20px;
+    border-radius: 10px;
+    background-color: #196F3D  ;
+    color: white; 
+    border: 2px solid #196F3D;
+    -webkit-transition-duration: 0.6s;
+    transition-duration: 0.6s;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+#button2:hover {
+    background-color: black;
+    color: white;
+    border: 2px solid #196F3D;
+}
+
+#button2 {
+       margin-top: 180px;
+    padding: 25px 20px;
+    border-radius: 10px;
+    background-color: #196F3D;
+    color: white; 
+    border: 2px solid #196F3D;
+    -webkit-transition-duration: 0.6s;
+    transition-duration: 0.6s;
+    cursor: pointer;
+    font-size: 25px; 
+}
+
+#symbol1 {
+    margin-left: 10px;
+    /* font-size: 15px; */
+}

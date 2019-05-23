@@ -1,0 +1,40 @@
+ .login-content {
+        
+            border-radius: 18px !important;
+             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+            margin-top: 1px;
+        
+        }
+
+       
+img{
+
+    max-width: 28% !important;
+    margin-top: -23px !important;
+}
+
+
+.login-logo {
+    
+    margin-bottom: 7px !important;
+}
+
+.register-link{
+    padding-top: 2px;
+}
+
+.page-content--bge5 {
+    background: #e5e5e5;
+    height: auto !important;
+    background-size: cover;
+    background-position: center center;
+}
+
+.page-content--bge5 {
+    background: #e5e5e5;
+    padding: 50px 0;
+    height: auto;
+} 
+.login-wrap {
+    padding-top: 0;
+}

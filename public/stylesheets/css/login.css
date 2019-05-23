@@ -1,0 +1,29 @@
+/* Login Css */
+
+.login-content 
+{
+        
+        border-radius: 18px !important;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+        margin-top: 0px;
+        
+}
+
+
+.down
+{
+        margin-top: 40px;
+}
+
+img{
+        max-width: 28% !important;
+}
+
+.page-content--bge5 {
+    background: #e5e5e5;
+    padding: 50px 0 !important;
+    height: 100vh;
+} 
+.login-wrap {
+    padding-top: 0 !important;
+}

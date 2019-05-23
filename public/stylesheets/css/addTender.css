@@ -1,0 +1,47 @@
+.buttonCLass {
+    margin-right: 31px;
+    border-radius: 10px;
+}
+
+.buttonCLass button {
+    border-radius: 19px;
+}
+
+button i {
+    margin-right: 9px;
+}
+
+
+
+
+.navbar-sidebar .navbar__list li a {
+
+        font-size: 20px;
+
+    }
+    
+textarea{
+
+        resize: none;
+    }
+
+.header-mobile .navbar-mobile .navbar-mobile__list li a {
+
+        padding: 8px 15px;
+        border-bottom: 2px solid #e6e6e6;
+
+    }
+
+    .logo img {
+    height: 71px;
+     
+}
+
+.logo {
+    padding-left: 2px !important;
+}
+
+.account-dropdown {
+
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.7) !important;
+}

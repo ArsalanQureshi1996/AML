@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <title>TS-ViewRecords</title>
+
+    <link rel="icon" href="images/icon/uzair-logo.png" type="image/png" sizes="16x16">
+
+
+    <link href="stylesheets/css/font-face.css" rel="stylesheet" media="all">
+    <link href="javascripts/vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link href="javascripts/vendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
+    <link href="javascripts/vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="javascripts/vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
+    <link href="javascripts/vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
+    <link href="javascripts/vendor/css-hamburgers/hamburgers.min.css" rel="stylesheet" media="all">
+    <link href="stylesheets/css/theme.css" rel="stylesheet" media="all">
+    <link href="stylesheets/css/viewTender.css" rel="stylesheet" media="all">
+   
+    
+</head>
+
+<body class="animsition">
+
+    <div id="myNav" class="overlay">
+        
+        
+        {{#each data}}
+        <a href="/viewTender" class="closebtn" onclick="closeNav()">&times;</a>
+        
+        {{#if "Tender_id == 18"}}
+            <div syle="border: 1px solid white;" class="overlay-content " value="-1" id="check4">
+                <h2 style="color: white; text-align: center;"> Customer Details </h2>
+                    <div class="side">
+                        <div class="row">
+                            <div class="col-md-12 col-xs-12 col-sm-12">
+                                <div class="table-responsive-xl">
+                                    <div class="dush">
+                                    <table class="table table-hover"> 
+                                         <tbody>
+                                             <tr>
+                                                <th >1</th>
+                                                <th>Customer CNIC Number:</th>
+                                                <td>{{Cust_number}}<td>
+                                            </tr>
+                                            
+                                            <tr>
+                                                <th >2</th>
+                                                <th>Customer Name:</th>
+                                                <td>{{Cust_name}}<td>
+                                            </tr>
+                                             <tr>
+                                                <th >3</th>
+                                                <th>NTN NUMBER:</th>
+                                                <td>{{ntn_number}}<td>
+                                            </tr>
+                                             <tr>
+                                                <th >4</th>
+                                                <th>STN NUMBER:</th>
+                                                <td>{{stn_number}}<td>
+                                            </tr>
+                                            <tr>
+                                                <th>5</th>
+                                                <th>Monthly Salary:</th>
+                                                <td>{{salary_monthly}}<td>
+                                            </tr>
+                                            <tr>
+                                                <th>6</th>
+                                                <th>Savings</th>
+                                                <td>{{Savings}}<td>
+                                            </tr>
+                                            <tr>
+                                                <th>7</th>
+                                                <th>Yearly Salary:</th>
+                                                <td>{{salary_per_anum}}<td>
+                                            </tr> 
+                                            <tr>
+                                                <th>8</th>
+                                                <th>Bank Name</th>
+                                                <td>{{Bank_name}}<td>            
+                                            </tr>
+                                            <tr>
+                                                <th >9</th>
+                                                <th>Bank Account Number:</th>
+                                                <td>{{Bank_acc_number}}<td>
+                                            </tr>
+                                            <tr>
+                                                <th >10</th>
+                                                <th>Job Type:</th>
+                                                <td>{{Job_type}}<td>
+                                            </tr>
+                                            <tr>
+                                                <th>11</th>
+                                                <th>Industry:</th>
+                                                <td>{{Industry}}<td>
+                                            </tr>
+                                            <tr>
+                                                <th >12</th>
+                                                <th>Opening Date:</th>
+                                                <td>{{Opening_date}}<td>
+                                            </tr>
+                                            <tr>
+                                                <th >13</th>
+                                                <th>Politically Exposed Person: </th>
+                                                <td>{{politically_exposed_person}}<td>
+                                            </tr>                                            
+                                        </tbody>
+                                       
+                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                {{/if}}
+                {{/each}}
+            </div>    
+            <div class="page-wrapper">
+            <!-- HEADER MOBILE-->
+            <header class="header-mobile d-block d-lg-none">
+                <div class="header-mobile__bar">
+                    <div class="container-fluid">
+                        <div class="header-mobile-inner">
+                            <a class="logo" href="/dashboard">
+                                <img src="images/icon/uzair-logo.png" alt="Crystal" />
+                            </a>
+                            <button class="hamburger hamburger--slider" type="button">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <nav class="navbar-mobile">
+                    <div class="container-fluid">
+                        <ul class="navbar-mobile__list list-unstyled">
+                            
+                            <li class="has-sub">
+                                <a class="js-arrow" href="/dashboard">
+                                <i class="fas fa-home"></i>Home</a>
+                            </li>
+                            <li>
+                                <a href="/viewTender">
+                                <i class="fas fa-table"></i>View Records</a>
+                            </li>
+                            <li>
+                                <a href="/addTender">
+                                <i class="far fa-plus-square"></i>Add Records</a>
+                            </li>
+                            <li>
+                                <a href="/searchTender">
+                                <i class="fas fa-search"></i>Search Records</a>
+                            </li>
+                            <li>
+                                <a href="/deleteTender">
+                                <i class="fas fa-trash"></i>Delete Records</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <!-- END HEADER MOBILE-->
+
+            <!-- MENU SIDEBAR-->
+            <aside class="menu-sidebar d-none d-lg-block">
+                <div class="logo">
+                    <a href="/dashboard">
+                        <img src="images/icon/grey.jpg" alt="Crystal" />
+                    </a>
+                </div>
+                <div class="menu-sidebar__content js-scrollbar1">
+                    <nav class="navbar-sidebar">
+                        <ul class="list-unstyled navbar__list">
+                            {{#if frole.admin }}
+                            <li class="has-sub">
+                                <a class="js-arrow" href="/dashboard">
+                                <i class="fas fa-home"></i>Home</a>
+                            </li>
+                            <li>
+                                <a href="/addTender">
+                                <i class="fas fa-plus-square"></i>Add Records</a>
+                            </li>
+                            <li  class="active">
+                                <a href="/viewTender">
+                                <i class="fas fa-table"></i>View Records</a>
+                            </li>
+                            <li>
+                                <a href="/searchTender">
+                                <i class="fas fa-search"></i>Search Records</a>
+                            </li>
+                            <li>
+                                <a href="/deleteTender">
+                                <i class="fas fa-trash"></i>Delete Records</a>
+                            </li>
+                            {{else}}
+                            <li class="has-sub">
+                                <a class="js-arrow" href="/dashboard">
+                                <i class="fas fa-home"></i>Home</a>
+                            </li>
+                            
+                            <li  class="active">
+                                <a href="/viewTender">
+                                <i class="fas fa-table"></i>View Records</a>
+                            </li>
+                            <li>
+                                <a href="/searchTender">
+                                <i class="fas fa-search"></i>Search Records</a>
+                            </li>
+                            {{/if}}
+                        </ul>
+                    </nav>
+                </div>
+            </aside>
+            <!-- END MENU SIDEBAR-->
+
+            <!-- PAGE CONTAINER-->
+            
+            <div class="page-container" id="scroll">
+                <!-- HEADER DESKTOP-->
+                <header class="header-desktop">
+                    <div class="section__content section__content--p30">
+                        <div class="container-fluid">
+                            <div class="header-wrap">
+                                <div class="form-header">
+                                    <h2> <i class="fas fa-eye"></i> - View Records</h2>
+                                </div>
+                                <div class="header-button">
+                                    <div class="buttonCLass">
+                                    {{#if frole.admin }}
+                                   <a href="/register"> <button class="btn btn-outline-secondary btn-lg">  <i class="zmdi zmdi-account"></i>Create User</button></a>    
+                                   {{/if}}
+                                </div>
+                                    <div class="noti-wrap">
+                                        <div class="noti__item js-item-menu">
+                                            <div class="account-wrap">
+                                                <div class="account-item clearfix js-item-menu">
+                                                    <div class="image">
+                                                        <img src="images/icon/oye.png" alt="{{fname}}" />
+                                                    </div>
+                                                    <div class="content">
+                                                        <a class="js-acc-btn">{{fname}}</a>
+                                                    </div>
+                                                    <div class="account-dropdown js-dropdown">
+                                                        <div class="info clearfix">
+                                                            <div class="image">
+                                                                    <img src="images/icon/oye.png" alt="{{fname}}" />
+                                                            </div>
+                                                            <div class="content">
+                                                                <h5 class="name">
+                                                                    {{fname}}
+                                                                </h5>
+                                                                <span class="email">{{femail}}</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="account-dropdown__footer">
+                                                            <a href="/users/logout">
+                                                            <i class="zmdi zmdi-power"></i>Logout</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                     </div>
+                                 </div>
+                             </div>
+                        </header>
+                    <!-- END HEADER DESKTOP-->
+
+                    <!-- MAIN CONTENT-->
+                    <div class="main-content">
+                        <div class="section__content section__content--p30">
+                            <div class="container-fluid">
+                                <h3 class="h3"> Total Records [ <i class="far fa-address-card"></i> {{total}} ] </h3>
+                                    <div class="row">
+                                        <div class="col-md-12 col-sm-12 col-xs-12">
+                                            {{#each data}}
+                                                <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
+                                                    <div class="paragraph1">
+                                                         <h3 class="h3" style=" margin-left: 10px;"><i class="fas fa-archive"></i> Customer CNIC Number: {{Cust_number}} </h3>
+                                                        <hr>
+                                                        <div class="paragraphs">
+                                                            
+                                                            <h4 class="h4"><span>Customer Name:</span> {{Cust_name}} </h4>
+                                                            <h4 class="h4"><span>Monthly Salary:</span> {{salary_monthly}} </h4>
+                                                            <h4 class="h4"><span>Savings:</span> {{Savings}} </h4>
+                                                            <h4 class="h4"><span>Opening Date:</span> {{Opening_date}} </h4>
+                                                            <h4 class="h4"><span>Politically Exposed Person:</span> {{politically_exposed_person}} </h4>
+                                                        </div>
+                                                       
+                                                        <button type="button" onclick="openNav({{this.Cust_id}})" class="btn btn-lg btn-outline-secondary">More Detail</button>
+                                                        <button type="button" data-toggle="modal" data-target="#exampleModal" value={{Cust_id}} id={{Cust_id}} onclick="deleteTender('{{Cust_id}}')" class="btn btn-lg btn-outline-danger">Delete Record</button>
+
+                                                    </div>
+                                                </div>
+                                            {{/each}}
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                                           <div class="row">
+                                <div class="col-md-12 col-sm-12">
+                                    <div class="copyright">
+                                    </div>
+                                </div>
+ 
+                    </div>
+                            
+                </div>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Delete Record</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            Are you sure you want to delete?
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+                            <button type="button" id="yes" value="-1" class="btn btn-primary" onclick="deletefu()">Yes</button>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+            </div>
+     
+    <script src="javascripts/vendor/jquery-3.2.1.min.js"></script>
+    <script src="javascripts/vendor/bootstrap-4.1/bootstrap.min.js"></script>
+    <script src="javascripts/vendor/animsition/animsition.min.js"></script>
+    <script src="javascripts/js/main.js"></script>
+
+    <script>
+    function deleteTender(id){
+    //var a = document.getElementById('id').value;
+    //console.log(id);\
+    var a = document.getElementById("yes").value =id;
+    console.log(a);
+    console.log("hsajhsjas");
+}
+</script>
+
+<script>
+    function deletefu(){
+    
+    var b = document.getElementById("yes").value;
+    url = "http://localhost:3000/deleteTender/delete/";
+    url=url+b
+    window.location = url;
+}
+
+</script>
+
+     
+
+    <script>
+
+
+        function openNav(id) {
+         document.getElementById("myNav").style.height = "100%";
+         console.log(id);
+         document.getElementById("check4").value = id;
+        }
+
+        function closeNav() {
+        document.getElementById("myNav").style.height = "0%";
+        }
+
+       
+       
+        
+
+
+    </script>
+   
+   </body>
+</html>
+<!-- end document-->

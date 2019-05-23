@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="au theme template">
+    <meta name="author" content="Hau Nguyen">
+    <meta name="keywords" content="au theme template">
+
+    <!-- Title Page-->
+    <title>TS-AddTender</title>
+
+    <link rel="icon" href="images/icon/uzair-logo.png" type="image/png" sizes="16x16">
+
+    <!-- Fontfaces CSS-->
+    <link href="stylesheets/css/font-face.css" rel="stylesheet" media="all">
+    <link href="javascripts/vendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
+    <link href="javascripts/vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link href="javascripts/vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="javascripts/vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
+    <link href="javascripts/vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
+    <link href="javascripts/vendor/css-hamburgers/hamburgers.min.css" rel="stylesheet" media="all">
+    <link href="stylesheets/css/theme.css" rel="stylesheet" media="all">
+    <link href="stylesheets/css/addTender.css" rel="stylesheet" media="all">
+    
+</head>
+
+<body class="animsition">
+    <div class="page-wrapper">
+        <!-- HEADER MOBILE-->
+        <header class="header-mobile d-block d-lg-none">
+            <div class="header-mobile__bar">
+                <div class="container-fluid">
+                    <div class="header-mobile-inner">
+                        <a class="logo" href="/dashboard">
+                            <img src="images/icon/uzair-logo.png" alt="Crystal" />
+                        </a>
+                        <button class="hamburger hamburger--slider" type="button">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <nav class="navbar-mobile">
+                <div class="container-fluid">
+                    <ul class="navbar-mobile__list list-unstyled">
+                        <li class="has-sub">
+                            <a class="js-arrow" href="/dashboard">
+                            <i class="fas fa-home"></i>Home</a>
+                        </li>
+                        <li>
+                            <a href="/viewTender">
+                            <i class="fas fa-table"></i>View Tender's</a>
+                        </li>
+                        <li>
+                            <a href="/addTender">
+                            <i class="far fa-plus-square"></i>Add Tender's</a>
+                        </li>
+                        <li>
+                            <a href="/searchTender">
+                            <i class="fas fa-search"></i>Search Tender's</a>
+                        </li>
+                        <li>
+                            <a href="/deleteTender">
+                            <i class="fas fa-trash"></i>Delete Tender's</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- END HEADER MOBILE-->
+
+        <!-- MENU SIDEBAR-->
+        <aside class="menu-sidebar d-none d-lg-block">
+            <div class="logo">
+                <a href="/dashboard">
+                    <img src="images/icon/grey.jpg" alt="Crystal" />
+                </a>
+            </div>
+            <div class="menu-sidebar__content js-scrollbar1">
+                <nav class="navbar-sidebar">
+                    <ul class="list-unstyled navbar__list">
+                        <li class="has-sub">
+                            <a class="js-arrow" href="/dashboard">
+                            <i class="fas fa-home"></i>Home</a>
+                        </li>
+                        <li class="active">
+                            <a href="/addTender">
+                            <i class="fas fa-plus-square"></i>Add Records</a>
+                        </li>
+                        <li>
+                            <a href="/viewTender">
+                            <i class="fas fa-table"></i>View Records</a>
+                        </li>
+                        <li>
+                            <a href="/searchTender">
+                                <i class="fas fa-search"></i>Search Records</a>
+                        </li>
+                        <li>
+                            <a href="/deleteTender">
+                                <i class="fas fa-trash"></i>Delete Records</a>
+                        </li>     
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+        <!-- END MENU SIDEBAR-->
+
+        <!-- PAGE CONTAINER-->
+        <div class="page-container">
+            <!-- HEADER DESKTOP-->
+            <header class="header-desktop">
+                <div class="section__content section__content--p30">
+                    <div class="container-fluid">
+                        <div class="header-wrap">
+                            <div class="form-header" >
+                               <h2> <i class="fas fa-cart-plus"></i> - Add Records</h2>
+                            </div>
+                            <div class="header-button">
+                                <div class="buttonCLass">  
+                                    <a href="#"> <button class="btn btn-outline-secondary btn-lg">  <i class="zmdi zmdi-account"></i>Import excel file</button></a>    
+                                    <a href="/register"> <button class="btn btn-outline-secondary btn-lg">  <i class="zmdi zmdi-account"></i>Create User</button></a>    
+                                </div>
+                                <div class="noti-wrap">
+                                    <div class="noti__item js-item-menu">
+                                        <div class="account-wrap">
+                                                <div class="account-item clearfix js-item-menu">
+                                                    <div class="image">
+                                                        <img src="images/icon/oye.png" alt="{{fname}}" />
+                                                    </div>
+                                                    <div class="content">
+                                                        <a class="js-acc-btn">{{fname}}</a>
+                                                    </div>
+                                                    <div class="account-dropdown js-dropdown">
+                                                        <div class="info clearfix">
+                                                            <div class="image">
+                                                                    <img src="images/icon/oye.png" alt="{{fname}}" />
+                                                            </div>
+                                                            <div class="content">
+                                                                <h5 class="name">
+                                                                    {{fname}}
+                                                                </h5>
+                                                                <span class="email">{{femail}}</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="account-dropdown__footer">
+                                                            <a href="/users/logout">
+                                                                <i class="zmdi zmdi-power"></i>Logout</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                     </div>
+                                 </div>
+                             </div>
+                        </header>
+            <!-- HEADER DESKTOP-->
+
+            <!-- MAIN CONTENT-->
+            <div class="main-content">
+                <div class="section__content section__content--p30">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="card">
+                                    <div class="card-header">Add Records Form</div>
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <h2 class="text-center title-2">Add Records</h2>
+                                        </div>
+                                        <hr>
+                                        <form action="" method="post">
+                                            <div class="form-group">
+                                                <label for="Cust_name" class="control-label mb-1">Customer Name</label>
+                                                <input id="Cust_name" name="Cust_name" type="text" class="form-control" aria-required="true" aria-invalid="false"  required />
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="Cust_number" class="control-label mb-1">CNIC Number</label>
+                                                 <input id="Cust_number" name="Cust_number" type="number" class="form-control" aria-required="true" aria-invalid="false" min="1000000000000" max="9999999999999" required />
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="ntn_number" class="control-label mb-1">NTN(National Tax Number) Number</label>
+                                                 <input id="ntn_number" name="ntn_number" type="number" class="form-control" aria-required="true" aria-invalid="false" min="10000000" max="99999999" required />
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="stn_number" class="control-label mb-1">STN(Sales Tax Number) Number</label>
+                                                 <input id="stn_number" name="stn_number" type="number" class="form-control" aria-required="true" aria-invalid="false" required />
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="salary_monthly" class="control-label mb-1">Average Monthly Income</label>
+                                                 <input id="salary_monthly" name="salary_monthly" type="number" class="form-control" aria-required="true" aria-invalid="false" required />
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="Savings" class="control-label mb-1">Average Total Savings</label>
+                                                 <input id="Savings" name="Savings" type="number" class="form-control" aria-required="true" aria-invalid="false" required />
+                                            </div>
+
+                                            <!--<div class="form-group">
+                                                <label for="salary_per_anum" class="control-label mb-1">Yearly Salary</label>
+                                                 <input id="salary_per_anum" name="salary_per_anum" class="form-control" aria-required="true" aria-invalid="false" required></textarea>
+                                            </div>-->
+                                           <!-- <div class="form-group">
+                                                <label for="Bank_name" class="control-label mb-1">Bank Name</label>
+                                                 <input id="Bank_name" name="Bank_name" type="text" class="form-control" aria-required="true" aria-invalid="false" required />
+                                            </div>-->
+                                            <div class="form-group">
+                                                <label for="Bank_name" class="control-label mb-1">BANK NAME</label>
+                                                <select id="Bank_name" name="Bank_name" type="dropdown" class="form-control" aria-required="true" aria-invalid="false" required>
+                                                    <option>--Select--</option>
+                                                    <option value="Askari Bank Limited">Askari Bank Limited</option>
+                                                    <option value="Allied Bank Limited">Allied Bank Limited</option>
+                                                    <option value="Al Baraka Bank Limited">Al Baraka Bank (Pakistan) Limited</option>
+                                                    <option value="Bank Al Habib Limited">Bank Al Habib Limited</option>
+                                                    <option value="Bank Alfalah Limited">Bank Alfalah Limited</option>
+                                                    <option value="Bank Islami Limited">Bank Islami Limited</option>
+                                                    <option value="Dubai Islamic Bank Limited">Dubai Islamic Bank Pakistan Limited</option>
+                                                    <option value="Faysal Bank Limited">FAYSAL Bank Limited</option>
+                                                    <option value="Habib Bank Limited(HBL)">HBL(Habib Bank Limited)</option>
+                                                    <option value="Habib Metropolitan Bank Limited">Habib Metropolitan Bank Limited</option>
+                                                    <option value="JS Bank Limited">JS(Jahangir Siddiqui Investment Bank Limited)</option>                                                                                                      
+                                                    <option value="Meezan Bank Limited">MEEZAN Bank Limited</option>                                        
+                                                    <option value="MCB Bank Limited">MCB Bank Limited.</option>
+                                                    <option value="National Bank of Pakistan">National Bank of Pakistan</option>
+                                                    <option value="Silk Bank Limited">Silk Bank Limited</option>
+                                                    <option value="Summit Bank Limited">SUMMIT Bank Limited</option>
+                                                    <option value="Standard Chartered Bank Limited">Standard Chartered Bank (Pakistan) Limited</option>
+                                                    <option value="Soneri Bank Limited">Soneri Bank Limited.</option>
+                                                    <option value="Samba Bank Limited">Samba Bank Limited</option>    
+                                                    <option value="United Bank Limited(UBL)">UBL(United Bank Limited)</option>              
+                                                </select>
+                                            </div>
+                                             <div class="form-group">
+                                                <label for="Bank_acc_number" class="control-label mb-1">Bank Account Number</label>
+                                                 <input id="Bank_acc_number" type="number" name="Bank_acc_number"  class="form-control" aria-required="true" aria-invalid="false" min="1000000000000000" max="9999999999999999" required></textarea>
+                                            </div>
+                                            <!--<div class="form-group">
+                                                <label for="Job_type" class="control-label mb-1">Job Type</label>
+                                                 <input id="Job_type" name="Job_type" type="text" class="form-control" aria-required="true" aria-invalid="false" required />
+                                            </div>-->
+                                            <div class="form-group">
+                                                <label for="Job_type" class="control-label mb-1">JOB TYPE</label>
+                                                <select id="Job_type" name="Job_type" type="dropdown" class="form-control" aria-required="true" aria-invalid="false" required>
+                                                    <option>--Select--</option>
+                                                    <option value="Service">Service</option>
+                                                    <option value="Self Employeed">Self Employeed</option>
+                                                    <option value="Government Servant">Government Servant</option>
+                                                    <option value="NRP">Non Resident Pakistani</option>                                                    
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="Industry" class="control-label mb-1">INDUSTRY</label>
+                                                <select id="Industry" name="Industry" type="dropdown" class="form-control" aria-required="true" aria-invalid="false" required>
+                                                    <option>--Select--</option>
+                                                    <option value="AUTOMOBILE">Automobile</option>
+                                                    <option value="Food">Food</option>
+                                                    <option value="Information Technology">Information Technology</option>
+                                                    <option value="Textile">Textile</option>
+                                                    <option value="MARKETING">Marketing</option>
+                                                    <option value="Media">Media</option>
+                                                    <option value="Insurance">Insurance</option>
+                                                    <option value="Pharmacuticals">Pharmacuticals</option>
+                                                </select>
+                                            </div>
+                                            <!--<div class="form-group">
+                                                <label for="Industry" class="control-label mb-1">Industry</label>
+                                                 <input id="Industry" name="Industry" type="text" class="form-control" aria-required="true" aria-invalid="false" required />
+                                            </div>-->
+                                           <!-- <div class="form-group">
+                                                <label for="Currency" class="control-label mb-1">Currency</label>
+                                                 <input id="Currency" name="Currency" type="text" class="form-control" aria-required="true" aria-invalid="false" required />
+                                            </div>-->
+                                            <div class="form-group">
+                                                <label for="Currency" class="control-label mb-1">CURRENCY</label>
+                                                <select id="Currency" name="Currency" type="dropdown" class="form-control" aria-required="true" aria-invalid="false" required>
+                                                    <option>--Select--</option>
+                                                    <option value="USD">USD</option>
+                                                    <option value="PKR">PKR</option>
+                                                    <option value="EURO">EURO</option>
+                                                    <option value="DIRHAM">DARHAM</option>
+                                                </select>
+                                            </div>
+                                            <div class="row"> 
+                                                <div class="col-6">
+                                                    <label for="Opening_date" class="control-label mb-1">Opening Date</label>
+                                                    <div class="input-group">
+                                                        <input id="Opening_date" name="Opening_date" type="date" class="form-control cc-exp"  data-val="true" required />
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="form-group">
+                                                        <label for="politically_exposed_person" class="control-label mb-1">Politically Exposed Person</label>
+                                                        <input id="politically_exposed_person" name="politically_exposed_person" type="text" class="form-control cc-exp"  data-val="true" required />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <button id="payment-button" type="submit" class="btn btn-lg btn-info btn-block" onclick="checkValid()">
+                                                    <i class="fa fa-lock fa-lg"></i>&nbsp;
+                                                    <span id="payment-button-amount">Submit</span> 
+                                                </button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                    <div class="row">
+                                    <div class="col-md-12 col-sm-12">
+                                        <div class="copyright">
+                                        </div>
+                                    </div>
+                                </div>
+            </div>
+        </div>
+
+        
+    
+    
+    <script src="javascripts/vendor/jquery-3.2.1.min.js"></script>
+    <script src="javascripts/vendor/bootstrap-4.1/popper.min.js"></script>
+    <script src="javascripts/vendor/bootstrap-4.1/bootstrap.min.js"></script>
+    <script src="javascripts/vendor/animsition/animsition.min.js"></script>
+    <script src="javascripts/js/main.js"></script>
+    <script src="./routes/addTender.js"></script>
+
+</body>
+</html>
+<!-- end document-->
